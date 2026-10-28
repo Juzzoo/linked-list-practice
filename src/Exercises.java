@@ -11,9 +11,17 @@ public class Exercises {
      * @param head the head of the linked list
      * @return sum of the values in the list
      */
-    public static int sum(ListNode head) {
-        return -1;
+   public static int sum(ListNode head) {
+    int total = 0;
+    ListNode current = head;
+
+    while (current != null) {
+        total += current.data;
+        current = current.next;
     }
+
+    return total;
+}
 
     /**
      * Returns how many negative values there are in the linked list.
